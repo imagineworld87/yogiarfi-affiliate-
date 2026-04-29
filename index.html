@@ -1,348 +1,60 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landing Page Affiliate Shopee</title>
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<style>
-:root{
-    --orange:#EE4D2D;
-    --green:#00A650;
-    --light:#f5f5f5;
-    --dark:#333;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:var(--light);
-    color:var(--dark);
-}
-
-/* HERO */
-header{
-    background:linear-gradient(135deg,#fff,#fff3ef);
-    padding:60px 20px;
-}
-
-.hero{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-.hero-text{
-    flex:1;
-}
-
-.hero-text h1{
-    color:var(--orange);
-    font-size:2.5rem;
-}
-
-.hero-text p{
-    margin:15px 0;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    border-radius:8px;
-    background:var(--orange);
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.hero img{
-    max-width:300px;
-}
-
-/* FEATURES */
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-    max-width:1100px;
-    margin:-40px auto 40px;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    text-align:center;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card i{
-    font-size:30px;
-    color:var(--green);
-}
-
-/* PRODUCTS */
-.products{
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.product{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    transition:0.3s;
-}
-
-.product:hover{
-    transform:translateY(-10px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.15);
-}
-
-.product img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-}
-
-.product-content{
-    padding:15px;
-}
-
-.price-old{
-    text-decoration:line-through;
-    color:#888;
-    font-size:12px;
-}
-
-.price-new{
-    color:var(--orange);
-    font-weight:bold;
-}
-
-.rating{
-    color:gold;
-}
-
-.load-btn{
-    text-align:center;
-    margin:30px;
-}
-
-/* TESTIMONIAL */
-.testimonial{
-    background:white;
-    padding:50px 20px;
-}
-
-.slider{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-}
-
-.slide{
-    min-width:100%;
-    background:#f9f9f9;
-    padding:20px;
-    border-radius:10px;
-    text-align:center;
-}
-
-/* NEWSLETTER */
-.newsletter{
-    background:var(--green);
-    color:white;
-    text-align:center;
-    padding:40px;
-}
-
-.newsletter input{
-    padding:10px;
-    border:none;
-    border-radius:5px;
-}
-
-.newsletter button{
-    padding:10px 20px;
-    background:black;
-    color:white;
-    border:none;
-    border-radius:5px;
-}
-
-/* FOOTER */
-footer{
-    background:#222;
-    color:#aaa;
-    text-align:center;
-    padding:20px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-    .grid{grid-template-columns:repeat(2,1fr);}
-}
-
-@media(max-width:500px){
-    .grid{grid-template-columns:1fr;}
-}
-</style>
+  <title>Rekomendasi Produk Shopee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body style="font-family: Arial; text-align: center;">
 
-<!-- HERO -->
-<header>
-<div class="hero">
-<div class="hero-text">
-<h1>Temukan Rekomendasi Produk Terbaik dari Shopee</h1>
-<p>Dapatkan diskon eksklusif dan cashback hanya di sini!</p>
+<h1>🔥 Rekomendasi Produk Terbaik</h1>
+<p>Klik tombol di bawah untuk melihat produk di Shopee</p>
 
-<!-- GANTI LINK AFFILIATE DI SINI -->
-<a href="https://shope.ee/affiliate-link" class="btn" onclick="redirectAlert()">Belanja Sekarang</a>
-</div>
+<br>
 
-<img src="https://illustrations.popsy.co/orange/shopping.svg">
-</div>
-</header>
+<h2>Produk 1</h2>
+<a href="https://s.shopee.co.id/8piEgqLyPj" target="_blank">
+  <button>🛒 Belanja Sekarang</button>
+</a>
 
-<!-- FEATURES -->
-<div class="features">
-<div class="card"><i class="fas fa-check-circle"></i><p>Garansi 100% Ori</p></div>
-<div class="card"><i class="fas fa-tags"></i><p>Diskon Sampai 70%</p></div>
-<div class="card"><i class="fas fa-truck"></i><p>Gratis Ongkir</p></div>
-<div class="card"><i class="fas fa-coins"></i><p>Cashback Setiap Hari</p></div>
-</div>
+<br><br>
 
-<!-- PRODUCTS -->
-<section class="products">
-<h2>Produk Unggulan</h2>
+<h2>Produk 2</h2>
+<a href="https://s.shopee.co.id/3VgiLuXJr9" target="_blank">
+  <button>🛒 Belanja Sekarang</button>
+</a>
 
-<div class="grid" id="productGrid"></div>
+<br><br>
 
-<div class="load-btn">
-<button class="btn" onclick="loadMore()">Muat Lebih Banyak</button>
-</div>
-</section>
+<h2>Produk 3</h2>
+<a href="https://s.shopee.co.id/7KtQuz53x6" target="_blank">
+  <button>🛒 Belanja Sekarang</button>
+</a>
 
-<!-- TESTIMONIAL -->
-<section class="testimonial">
-<div class="slider">
-<div class="slide">
-<p>"Produknya bagus banget!"</p>
-<div class="rating">★★★★★</div>
-<h4>Andini</h4>
-</div>
+<br><br>
 
-<div class="slide">
-<p>"Harga paling murah dari link ini!"</p>
-<div class="rating">★★★★★</div>
-<h4>Budi</h4>
-</div>
-</div>
-</section>
+<h2>Produk 4</h2>
+<a href="https://s.shopee.co.id/2qR1YjXCZL" target="_blank">
+  <button>🛒 Belanja Sekarang</button>
+</a>
 
-<!-- NEWSLETTER -->
-<section class="newsletter">
-<h2>Dapatkan promo terbaru via email</h2>
-<input type="email" placeholder="Email kamu">
-<button onclick="subscribe()">Subscribe</button>
-</section>
+<br><br>
 
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Affiliate Shopee</p>
-<p>Disclaimer: Kami mendapat komisi dari pembelian melalui link afiliasi</p>
-</footer>
+<h2>Produk 5</h2>
+<a href="https://s.shopee.co.id/3VgiLzCo5q" target="_blank">
+  <button>🛒 Belanja Sekarang</button>
+</a>
 
-<script>
-// DATA PRODUK
-const products = [
-{name:"Smartwatch",img:"https://picsum.photos/300?1",old:"500k",newp:"250k"},
-{name:"Earphone TWS",img:"https://picsum.photos/300?2",old:"300k",newp:"150k"},
-{name:"Power Bank",img:"https://picsum.photos/300?3",old:"200k",newp:"120k"},
-{name:"Tas Wanita",img:"https://picsum.photos/300?4",old:"250k",newp:"99k"},
-{name:"Kemeja Pria",img:"https://picsum.photos/300?5",old:"150k",newp:"100k"},
-{name:"Lampu LED",img:"https://picsum.photos/300?6",old:"100k",newp:"60k"}
-];
+<br><br>
 
-let index = 0;
+<h2>Produk 6</h2>
+<a href="https://s.shopee.co.id/2g7bMTWYVh" target="_blank">
+  <button>🛒 Belanja Sekarang</button>
+</a>
 
-function loadMore(){
-    let grid = document.getElementById("productGrid");
-    for(let i=0;i<3;i++){
-        if(index>=products.length) return;
+<br><br>
 
-        let p = products[index];
-
-        grid.innerHTML += `
-        <div class="product">
-        <img src="${p.img}">
-        <div class="product-content">
-        <h4>${p.name}</h4>
-        <div class="price-old">Rp ${p.old}</div>
-        <div class="price-new">Rp ${p.newp}</div>
-        <div class="rating">★★★★★</div>
-
-        <!-- GANTI LINK AFFILIATE DI SINI -->
-        <a href="https://shope.ee/affiliate-link" class="btn" onclick="redirectAlert()">Beli di Shopee</a>
-        </div>
-        </div>
-        `;
-
-        index++;
-    }
-}
-
-// LOAD AWAL
-loadMore();
-
-// ALERT REDIRECT
-function redirectAlert(){
-    alert("Kamu akan diarahkan ke Shopee");
-}
-
-// SUBSCRIBE
-function subscribe(){
-    alert("Terima kasih telah subscribe!");
-}
-
-// SMOOTH SCROLL
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-    anchor.addEventListener('click',function(e){
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior:'smooth'
-        });
-    });
-});
-</script>
+<p>Terima kasih sudah berkunjung 🙏</p>
 
 </body>
 </html>
