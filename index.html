@@ -26,32 +26,16 @@ barang aesthetic,
 barang tiktok viral
 ">
 
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="index, follow">
 
 <meta property="og:title" content="🔥 Produk Viral Shopee 2026">
 <meta property="og:description" content="Kumpulan produk viral dan trending yang sedang ramai dibeli hari ini.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yogiarfi.my.id/">
 <meta property="og:image" content="https://loremflickr.com/1200/800/shopping">
-
-<meta name="twitter:card" content="summary_large_image">
 
 <link rel="canonical" href="https://yogiarfi.my.id/">
 
-<meta name="theme-color" content="#4facfe">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- SCHEMA -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"WebSite",
-"name":"Produk Viral Shopee 2026",
-"url":"https://yogiarfi.my.id/",
-"description":"Produk viral dan trending Shopee paling ramai dibeli hari ini."
-}
-</script>
 
 <style>
 
@@ -60,6 +44,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -68,48 +53,79 @@ color:#222;
 overflow-x:hidden;
 }
 
-header{
-background:linear-gradient(135deg,#4facfe,#00f2fe);
-padding:90px 20px;
-text-align:center;
-color:white;
+/* VIDEO HERO */
+
+.video-bg{
+position:relative;
+height:100vh;
+overflow:hidden;
 }
 
-header h1{
-font-size:52px;
+.video-bg video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(2px);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
 font-weight:700;
 line-height:1.2;
 margin-bottom:20px;
+text-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
-header p{
-max-width:760px;
-margin:auto;
-font-size:18px;
+.hero-content p{
+font-size:20px;
+max-width:700px;
 line-height:1.8;
-opacity:.95;
+margin-bottom:35px;
 }
 
 .hero-btn{
 display:inline-block;
-margin-top:35px;
-padding:16px 34px;
+padding:17px 38px;
 border-radius:999px;
-background:white;
-color:#2196f3;
+background:linear-gradient(135deg,#ff6b6b,#ff8e53);
+color:white;
 font-weight:700;
 text-decoration:none;
 transition:.3s;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .hero-btn:hover{
-transform:scale(1.05);
+transform:scale(1.08);
 }
+
+/* CONTAINER */
 
 .container{
 max-width:1350px;
 margin:auto;
-padding:55px 20px;
+padding:60px 20px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
 gap:30px;
@@ -123,11 +139,12 @@ box-shadow:0 10px 35px rgba(0,0,0,.08);
 transition:.35s;
 display:flex;
 flex-direction:column;
+position:relative;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 18px 45px rgba(0,0,0,.12);
+box-shadow:0 18px 45px rgba(0,0,0,.14);
 }
 
 .card img{
@@ -184,19 +201,38 @@ transition:.3s;
 transform:scale(1.03);
 }
 
+/* MUSIC BUTTON */
+
+.music-btn{
+position:fixed;
+left:20px;
+bottom:20px;
+z-index:999;
+border:none;
+padding:14px 18px;
+border-radius:999px;
+background:#111;
+color:white;
+cursor:pointer;
+font-weight:700;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+/* STICKY CTA */
+
 .sticky{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:linear-gradient(135deg,#ff6b6b,#ff8e53);
 color:white;
 padding:16px 24px;
 border-radius:999px;
 font-weight:700;
 text-decoration:none;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
 z-index:999;
 animation:pulse 2s infinite;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 @keyframes pulse{
@@ -205,8 +241,31 @@ animation:pulse 2s infinite;
 100%{transform:scale(1);}
 }
 
+/* COUNTDOWN */
+
+.countdown{
+background:white;
+padding:25px;
+border-radius:24px;
+margin:30px auto;
+max-width:900px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.countdown h2{
+margin-bottom:10px;
+font-size:28px;
+}
+
+.countdown p{
+color:#666;
+}
+
+/* FOOTER */
+
 footer{
-padding:45px 20px;
+padding:50px 20px;
 text-align:center;
 font-size:14px;
 color:#666;
@@ -218,125 +277,88 @@ color:#666;
 
 <body>
 
-<header>
+<!-- HERO VIDEO -->
 
-<h1>🔥 Produk Viral & Trending Shopee 2026</h1>
+<div class="video-bg">
+
+<video autoplay muted loop playsinline>
+<source src="https://cdn.coverr.co/videos/coverr-shopping-online-5174/1080p.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>🔥 Produk Viral Shopee 2026</h1>
 
 <p>
-Temukan produk viral paling ramai dibeli hari ini mulai dari skincare,
-gadget, fashion hingga perlengkapan rumah dengan promo terbaik.
+Produk trending paling ramai dibeli hari ini. 
+Mulai skincare, gadget, fashion hingga elektronik viral.
 </p>
 
-<a href="#produk" class="hero-btn">Lihat Produk Viral</a>
+<a href="#produk" class="hero-btn">
+Lihat Produk Viral
+</a>
 
-</header>
+</div>
+
+</div>
+
+<!-- COUNTDOWN -->
+
+<div class="countdown">
+<h2>⚡ Promo Viral Hari Ini</h2>
+<p>Diskon dan produk trending bisa berubah kapan saja.</p>
+</div>
+
+<!-- PRODUK -->
 
 <section class="container" id="produk">
 
 <div class="card">
-<img src="https://loremflickr.com/600/600/perfume" alt="Parfum pria fresh citrus">
+<img src="https://loremflickr.com/600/600/perfume" alt="Parfum pria">
 <div class="card-content">
-<span class="badge">Parfum Viral</span>
-<h2>Octarine - Blue Motion Parfum Pria Aroma Fresh Citrus</h2>
+<span class="badge">🔥 Viral</span>
+<h2>Octarine - Blue Motion Parfum Pria</h2>
 <p>Parfum pria aroma citrus segar dan elegan untuk aktivitas sehari-hari.</p>
 <a class="btn" href="https://s.shopee.co.id/4VZbfntRyK">Beli Sekarang</a>
 </div>
 </div>
 
 <div class="card">
-<img src="https://loremflickr.com/600/600/sunscreen" alt="Minimalist sunscreen">
+<img src="https://loremflickr.com/600/600/sunscreen" alt="Sunscreen">
 <div class="card-content">
-<span class="badge">Skincare Trending</span>
+<span class="badge">⭐ Trending</span>
 <h2>Minimalist SPF 50 Sunscreen</h2>
-<p>Sunscreen SPF50 PA++++ ringan, acne safe dan nyaman dipakai setiap hari.</p>
+<p>Sunscreen ringan SPF50 PA++++ yang nyaman dipakai setiap hari.</p>
 <a class="btn" href="https://s.shopee.co.id/1Vw06T4tc0">Beli Sekarang</a>
 </div>
 </div>
 
 <div class="card">
-<img src="https://loremflickr.com/600/600/kids-fashion" alt="Baju anak premium">
+<img src="https://loremflickr.com/600/600/microphone" alt="Microphone">
 <div class="card-content">
-<span class="badge">Fashion Anak</span>
-<h2>ESTISHOP X DINODAY Baju Wangki Anak Premium</h2>
-<p>Baju anak premium nyaman dan stylish untuk aktivitas sehari-hari.</p>
-<a class="btn" href="https://s.shopee.co.id/1Vw06XJi6a">Beli Sekarang</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://loremflickr.com/600/600/skincare" alt="Parasol sunscreen">
-<div class="card-content">
-<span class="badge">Best Seller</span>
-<h2>Parasol Cream Sunscreen SPF 33</h2>
-<p>Sunblock moisturizing dengan aloe vera dan vitamin C yang nyaman di kulit.</p>
-<a class="btn" href="https://s.shopee.co.id/8fPAdmYoD3">Beli Sekarang</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://loremflickr.com/600/600/vaseline" alt="Vaseline sunscreen">
-<div class="card-content">
-<span class="badge">Produk Viral</span>
-<h2>Vaseline SPF50 Refreshing Daily Sunscreen Serum</h2>
-<p>Perlindungan UVA UVB dengan sensasi segar dan formula ringan.</p>
-<a class="btn" href="https://s.shopee.co.id/5VS8s3zHc2">Beli Sekarang</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://loremflickr.com/600/600/shoe-rack" alt="Rak sepatu portable">
-<div class="card-content">
-<span class="badge">Rumah Tangga</span>
-<h2>Rak Sepatu Portable 5 Susun</h2>
-<p>Rak sepatu minimalis dan praktis agar rumah lebih rapi.</p>
-<a class="btn" href="https://s.shopee.co.id/8V5kReEde4">Beli Sekarang</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://loremflickr.com/600/600/microphone" alt="Wireless microphone">
-<div class="card-content">
-<span class="badge">Konten Kreator</span>
-<h2>SMARTCOM Q8 Wireless Clip On Microphone</h2>
-<p>Mikrofon wireless praktis untuk live streaming dan video kreator.</p>
+<span class="badge">🎤 Creator</span>
+<h2>SMARTCOM Q8 Wireless Clip On Mic</h2>
+<p>Mikrofon wireless praktis untuk live streaming dan konten kreator.</p>
 <a class="btn" href="https://s.shopee.co.id/3LNeIOVCjY">Beli Sekarang</a>
 </div>
 </div>
 
 <div class="card">
-<img src="https://loremflickr.com/600/600/tripod" alt="Tripod hp kamera">
+<img src="https://loremflickr.com/600/600/smartwatch" alt="Smartwatch">
 <div class="card-content">
-<span class="badge">Gadget Viral</span>
-<h2>Tripod HP dan Kamera Universal</h2>
-<p>Tripod portable untuk video, live streaming dan fotografi.</p>
-<a class="btn" href="https://s.shopee.co.id/2g7xVHhZ1W">Beli Sekarang</a>
+<span class="badge">⌚ Gadget</span>
+<h2>Smartwatch Bluetooth IP68</h2>
+<p>Jam tangan pintar modern dengan fitur monitor detak jantung.</p>
+<a class="btn" href="https://s.shopee.co.id/6fe6HAoGxw">Beli Sekarang</a>
 </div>
 </div>
 
 <div class="card">
-<img src="https://loremflickr.com/600/600/corduroy-pants" alt="Celana corduroy pria">
+<img src="https://loremflickr.com/600/600/projector" alt="Projector">
 <div class="card-content">
-<span class="badge">Fashion Pria</span>
-<h2>DISAI Celana Corduroy Baggy Unisex</h2>
-<p>Celana baggy casual modern dengan bahan nyaman dan stylish.</p>
-<a class="btn" href="https://s.shopee.co.id/6pxWT85Ftx">Beli Sekarang</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://loremflickr.com/600/600/tumbler" alt="Botol tumbler aesthetic">
-<div class="card-content">
-<span class="badge">Lifestyle</span>
-<h2>Botol Tumbler Herblf 900ml</h2>
-<p>Tumbler aesthetic tahan panas dan dingin dengan kapasitas besar.</p>
-<a class="btn" href="https://s.shopee.co.id/3qJutkQZjI">Beli Sekarang</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://loremflickr.com/600/600/projector" alt="Mini projector portable">
-<div class="card-content">
-<span class="badge">Elektronik Trending</span>
+<span class="badge">📽 Elektronik</span>
 <h2>YG300 Mini Portable Projector</h2>
 <p>Mini projector portable untuk nonton film dan presentasi.</p>
 <a class="btn" href="https://s.shopee.co.id/2VoXJQU05w">Beli Sekarang</a>
@@ -344,16 +366,28 @@ gadget, fashion hingga perlengkapan rumah dengan promo terbaik.
 </div>
 
 <div class="card">
-<img src="https://loremflickr.com/600/600/smartwatch" alt="Smartwatch modern">
+<img src="https://loremflickr.com/600/600/tripod" alt="Tripod">
 <div class="card-content">
-<span class="badge">Smart Gadget</span>
-<h2>Smartwatch Bluetooth Tahan Air IP68</h2>
-<p>Jam tangan pintar modern dengan monitor detak jantung.</p>
-<a class="btn" href="https://s.shopee.co.id/6fe6HAoGxw">Beli Sekarang</a>
+<span class="badge">📱 Viral</span>
+<h2>Tripod HP dan Kamera Universal</h2>
+<p>Tripod portable untuk video, fotografi dan live streaming.</p>
+<a class="btn" href="https://s.shopee.co.id/2g7xVHhZ1W">Beli Sekarang</a>
 </div>
 </div>
 
 </section>
+
+<!-- MUSIC -->
+
+<button onclick="document.getElementById('musik').play()" class="music-btn">
+🎵 Music
+</button>
+
+<audio id="musik" loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8a8e8b1c1.mp3?filename=fashion-chill-11076.mp3">
+</audio>
+
+<!-- STICKY BUTTON -->
 
 <a class="sticky" href="#produk">
 🔥 Produk Viral
