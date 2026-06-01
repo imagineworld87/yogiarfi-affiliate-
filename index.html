@@ -1,284 +1,118 @@
-Create a complete production-ready e-commerce landing page using HTML, CSS, and Vanilla JavaScript.
+Build a modern SEO-optimized laptop marketplace landing page using HTML, CSS, and Vanilla JavaScript.
 
-PROJECT NAME:
+Website Name:
 Laptop Terlaris
 
-WEBSITE TITLE:
+Hero Title:
 Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik
 
-PRIMARY GOAL:
-Build a fast, modern, SEO-optimized laptop showcase website that displays many laptop products in a clean and professional grid layout.
+Hero Description:
+Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook pilihan dengan performa terbaik dan harga kompetitif.
 
-DESIGN STYLE:
+Requirements:
 
-- Modern minimalist
-- Premium marketplace appearance
-- White background
-- Dark text
-- Shopee orange accent (#EE4D2D)
-- Clean layout
-- Professional typography
-- Soft shadows
-- Rounded corners
-- Product-focused design
-- High conversion rate
+- Pure HTML, CSS, JavaScript
 - Mobile-first responsive design
+- Fast loading
+- SEO optimized
+- Clean modern UI
+- White background
+- Shopee orange accent (#EE4D2D)
+- Professional typography
+- Product-focused layout
 
-TECH STACK:
+Sections:
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- No Bootstrap
-- No jQuery
-- No React
-- No Frameworks
-
-FILE STRUCTURE:
-
-/index.html
-/style.css
-/script.js
-/images/
-
-SEO REQUIREMENTS:
-
-Generate:
-
-- Meta Title
-- Meta Description
-- Canonical URL placeholder
-- Open Graph Tags
-- Twitter Card Tags
-- Structured Data JSON-LD
-- Organization Schema
-- Website Schema
-- Product Schema
-- FAQ Schema
-- Breadcrumb Schema
-
-Use semantic HTML:
-
-<header>
-<nav>
-<main>
-<section>
-<article>
-<footer>Only one H1 on page.
-
-PAGE STRUCTURE:
-
-==================================
-HEADER
-
-Sticky Header
-
-Contains:
+1. Sticky Header
 
 - Logo
-- Search Bar
-- Categories Menu
-- Promo Menu
-- Best Seller Menu
-- Contact Menu
+- Search bar
+- Navigation menu
 
-Mobile Menu Included.
+2. Hero Section
 
-==================================
-HERO SECTION
+- Headline
+- Description
+- CTA button
 
-H1:
+3. Categories Section
 
-Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik
-
-Description:
-
-Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook pilihan dengan performa terbaik dan harga yang kompetitif.
-
-Buttons:
-
-- Lihat Produk
-- Promo Hari Ini
-
-Include:
-
-- Statistics Cards
-- Customer Count
-- Products Count
-- Positive Reviews
-
-==================================
-CATEGORY SECTION
-
-Responsive category cards:
-
-- Laptop Gaming
-- Laptop Kuliah
-- Laptop Kerja
+- Gaming
+- Kuliah
+- Kerja
 - Ultrabook
-- Laptop Murah
-- Laptop Premium
+- Murah
+- Premium
 
-==================================
-PRODUCT SECTION
+4. Product Grid (Main Focus)
 
-MAIN FOCUS OF WEBSITE
-
-Generate products dynamically using JavaScript.
-
-Example:
-
-const products = [
-{
-id:1,
-title:"ASUS ROG Strix G16",
-price:"Rp 15.999.000",
-image:"images/product1.webp",
-link:"#",
-rating:"4.9",
-sold:"1200"
-}
-]
-
-Generate at least 30 placeholder products.
-
-All products must render automatically.
-
-Each card contains:
-
-- Product Image
-- Product Title
-- Price
-- Rating
-- Sold Count
-- CTA Button
-
-Card Design:
-
-- White background
-- Radius 16px
-- Soft shadow
-- Hover effect
-- Smooth transition
-
-GRID REQUIREMENTS:
-
-display:grid;
+Create a responsive product grid using:
 
 grid-template-columns:
 repeat(auto-fill,minmax(250px,1fr));
 
 gap:20px;
 
-Responsive:
+Generate product cards dynamically from:
 
-Desktop:
-5 columns
+const products = [
+{
+title:"",
+price:"",
+image:"",
+link:"",
+rating:"",
+sold:""
+}
+]
 
-Tablet:
-3 columns
+Each card:
 
-Mobile:
-2 columns
+- Product image
+- Product title
+- Price
+- Rating
+- Sold count
+- Buy button
 
-==================================
-FEATURED PRODUCTS
+Generate 24 placeholder products.
 
-Top Selling Products Grid
+5. Why Choose Us
 
-==================================
-WHY CHOOSE US
+6. FAQ Section
 
-Cards:
+7. Footer
 
-- Produk Pilihan
-- Harga Terbaik
-- Kualitas Terpercaya
-- Pengiriman Cepat
+SEO:
 
-==================================
-BUYING GUIDE
-
-SEO Content Sections:
-
-- Cara Memilih Laptop
-- Laptop Gaming Terbaik
-- Laptop untuk Kuliah
-- Laptop untuk Kerja
-- Tips Membeli Laptop
-
-==================================
-FAQ SECTION
-
-Generate 15 SEO-friendly FAQs.
-
-Implement FAQ Schema.
-
-==================================
-TESTIMONIALS
-
-Generate modern testimonial cards.
-
-==================================
-FOOTER
-
-Columns:
-
-- Tentang Kami
-- Kategori
-- Bantuan
-- Kebijakan
-- Kontak
-
-==================================
-PERFORMANCE
-
-- Lazy Loading Images
-- Responsive Images
-- Optimized CSS
-- Optimized JavaScript
-- Fast Loading
-- Core Web Vitals Friendly
-- Accessibility Friendly
-
-==================================
-ACCESSIBILITY
-
-- Alt text on images
-- Keyboard navigation
-- Proper ARIA labels
 - Semantic HTML
+- Meta title
+- Meta description
+- Open Graph
+- FAQ Schema
+- Product Schema
+- Proper H1-H3 structure
 
-==================================
-CODE QUALITY
+Performance:
 
-- Clean code
-- Well-commented sections
-- Reusable functions
-- Reusable product cards
-- Maintainable structure
+- Lazy loading images
+- CSS variables
+- Vanilla JavaScript only
+- Optimized rendering
 
-IMPORTANT:
+File Structure:
 
-All product images will be replaced later by me.
+- index.html
+- style.css
+- script.js
 
-Use local image paths only.
-
-Example:
+All images use local paths:
 
 images/product1.webp
 
-Do not use external image APIs.
+Do not use Bootstrap.
+Do not use jQuery.
+Do not use React.
+Do not use external image services.
 
-Do not use Unsplash.
-
-Do not use placeholder image services.
-
-Generate complete production-ready code suitable for deployment on GitHub Pages.
-
-Output:
-index.html
-style.css
-script.js
-
-Generate all code completely.
+Create a clean, modern, premium landing page similar to Shopee Mall and Apple Store, with the product grid as the main visual focus.
