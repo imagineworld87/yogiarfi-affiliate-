@@ -1,294 +1,262 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik</title><meta name="description" content="Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook terbaik dengan harga terbaik dan kualitas terpercaya."><style>
-:root{
-  --primary:#ee4d2d;
-  --dark:#111827;
-  --gray:#6b7280;
-  --light:#f9fafb;
-  --white:#ffffff;
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🔥 Laptop Murah & Terlaris di Shopee — Diskon Terbatas Hari Ini</title>
+
+<meta name="description" content="Laptop gaming, kerja, kuliah & ultrabook terlaris di Shopee. Harga murah, promo terbatas, best seller, dan stok cepat habis!">
+<meta name="keywords" content="laptop murah, laptop gaming, laptop shopee, laptop bekas, laptop kerja, laptop kuliah, ultrabook">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Laptop Murah & Terlaris di Shopee">
+<meta property="og:description" content="Promo laptop terbaik hari ini — harga bisa berubah kapan saja">
+<meta property="og:type" content="website">
+
+<link rel="canonical" href="https://example.com">
+
+<style>
+
+/* ===== GLOBAL ===== */
+body{margin:0;font-family:Arial;background:#f5f5f5;color:#333}
+
+/* ===== BANNER CTR ===== */
+.banner{
+background:#ee4d2d;
+color:#fff;
+text-align:center;
+padding:10px;
+font-weight:bold;
+font-size:14px;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-}
-
-body{
-  background:#f5f5f5;
-  color:var(--dark);
-}
-
+/* ===== HEADER ===== */
 header{
-  position:sticky;
-  top:0;
-  background:#fff;
-  padding:15px 5%;
-  box-shadow:0 2px 10px rgba(0,0,0,.08);
-  z-index:100;
+position:sticky;
+top:0;
+background:#fff;
+display:flex;
+gap:10px;
+padding:10px;
+align-items:center;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+z-index:10;
 }
 
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+.logo{color:#ee4d2d;font-weight:bold;font-size:18px}
+input{flex:1;padding:8px;border:1px solid #ddd;border-radius:8px}
 
-.logo{
-  font-size:24px;
-  font-weight:bold;
-  color:var(--primary);
-}
-
-.search{
-  width:40%;
-  padding:10px;
-  border:1px solid #ddd;
-  border-radius:10px;
-}
-
+/* ===== HERO ===== */
 .hero{
-  text-align:center;
-  padding:80px 5%;
-  background:linear-gradient(135deg,#fff,#fff5f2);
+text-align:center;
+padding:35px 20px;
+background:#fff7f5;
 }
 
-.hero h1{
-  font-size:48px;
-  margin-bottom:20px;
-}
-
-.hero p{
-  max-width:700px;
-  margin:auto;
-  color:var(--gray);
-  line-height:1.7;
-}
+.hero h1{font-size:22px;margin:0}
+.hero p{max-width:700px;margin:10px auto}
 
 .btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 28px;
-  background:var(--primary);
-  color:#fff;
-  text-decoration:none;
-  border-radius:10px;
+background:#ee4d2d;
+color:#fff;
+padding:10px 16px;
+border-radius:8px;
+display:inline-block;
+text-decoration:none;
+margin-top:10px;
+font-weight:bold;
 }
 
-.categories{
-  padding:40px 5%;
-}
-
-.categories h2,
-.products h2{
-  margin-bottom:20px;
-}
-
-.category-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:15px;
-}
-
+/* ===== CATEGORY ===== */
 .category{
-  background:#fff;
-  padding:20px;
-  border-radius:12px;
-  text-align:center;
-  box-shadow:0 2px 10px rgba(0,0,0,.05);
+display:inline-block;
+background:#fff;
+margin:5px;
+padding:8px 12px;
+border-radius:20px;
+box-shadow:0 4px 10px rgba(0,0,0,.05);
+font-size:13px;
 }
 
-.products{
-  padding:40px 5%;
+/* ===== GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+gap:20px;
+padding:20px;
 }
 
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
-  gap:20px;
-}
-
+/* ===== CARD (CTR BOOST) ===== */
 .card{
-  background:#fff;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
-  transition:.3s;
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+transition:.25s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+transform:scale(1.03);
+box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 
 .card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
+width:100%;
+height:180px;
+object-fit:cover;
 }
 
-.card-body{
-  padding:15px;
-}
+.card-body{padding:10px}
 
-.card-title{
-  font-size:16px;
-  margin-bottom:10px;
+.title{
+font-size:13px;
+height:40px;
+overflow:hidden;
 }
 
 .price{
-  color:var(--primary);
-  font-size:20px;
-  font-weight:bold;
+color:#ee4d2d;
+font-weight:bold;
+margin:5px 0;
 }
 
-.rating{
-  color:#f59e0b;
-  margin:8px 0;
+.meta{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+color:#666;
 }
 
 .buy{
-  display:block;
-  margin-top:10px;
-  text-align:center;
-  background:var(--primary);
-  color:white;
-  text-decoration:none;
-  padding:10px;
-  border-radius:10px;
+display:block;
+text-align:center;
+background:#ee4d2d;
+color:#fff;
+padding:10px;
+border-radius:8px;
+margin-top:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.2s;
 }
 
-.why{
-  padding:60px 5%;
+.buy:hover{
+background:#d63d20;
 }
 
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+/* ===== SEO TEXT ===== */
+.seo-text{
+max-width:900px;
+margin:20px auto;
+padding:10px;
+text-align:left;
 }
 
-.why-card{
-  background:#fff;
-  padding:25px;
-  border-radius:15px;
-  text-align:center;
-}
+</style>
+</head>
 
-.faq{
-  padding:60px 5%;
-}
+<body>
 
-.faq details{
-  background:#fff;
-  margin-bottom:10px;
-  padding:15px;
-  border-radius:10px;
-}
+<!-- CTR BANNER -->
+<div class="banner">
+🔥 PROMO LAPTOP HARI INI — STOK TERBATAS & HARGA BISA BERUBAH KAPAN SAJA
+</div>
 
-footer{
-  background:#111827;
-  color:#fff;
-  text-align:center;
-  padding:30px;
-  margin-top:40px;
-}
-
-@media(max-width:768px){
-  .hero h1{
-    font-size:32px;
-  }
-
-  .search{
-    width:55%;
-  }
-}
-</style></head>
-<body><header>
-<nav>
+<header>
 <div class="logo">Laptop Terlaris</div>
-<input class="search" type="text" placeholder="Cari laptop...">
-</nav>
-</header><section class="hero">
-<h1>Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik</h1>
+<input placeholder="Cari laptop murah, gaming, kerja...">
+</header>
+
+<div class="hero">
+<h1>🔥 Laptop Murah & Terlaris di Shopee</h1>
+<p>Diskon terbatas hari ini — laptop gaming, kerja, kuliah & ultrabook paling laris</p>
+<a class="btn" href="#produk">⚡ Lihat Promo Sekarang</a>
+</div>
+
+<section class="seo-text">
+<h2>Laptop Terbaik & Termurah di Shopee</h2>
 <p>
-Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook pilihan dengan performa terbaik dan harga kompetitif.
+Temukan laptop murah, laptop gaming, laptop kerja, laptop kuliah, hingga ultrabook dengan harga terbaik di Shopee.
+Semua produk sudah dipilih dari seller terpercaya dengan rating tinggi dan penjualan terbaik.
 </p>
-<a href="#produk" class="btn">Lihat Produk</a>
-</section><section class="categories">
-<h2>Kategori Populer</h2>
-<div class="category-grid">
-<div class="category">Gaming</div>
-<div class="category">Kuliah</div>
-<div class="category">Kerja</div>
-<div class="category">Ultrabook</div>
-<div class="category">Murah</div>
-<div class="category">Premium</div>
-</div>
-</section><section class="products" id="produk">
-<h2>Produk Terlaris</h2><div class="product-grid" id="productGrid"></div>
-</section><section class="why">
-<h2>Mengapa Memilih Kami?</h2>
-<br>
-<div class="why-grid">
-<div class="why-card">
-<h3>Harga Terbaik</h3>
-<p>Pilihan laptop dengan harga kompetitif.</p>
-</div><div class="why-card">
-<h3>Produk Pilihan</h3>
-<p>Produk populer dan banyak dicari.</p>
-</div><div class="why-card">
-<h3>Kualitas Terpercaya</h3>
-<p>Laptop berkualitas untuk berbagai kebutuhan.</p>
-</div><div class="why-card">
-<h3>Pengiriman Cepat</h3>
-<p>Belanja lebih mudah dan nyaman.</p>
-</div>
-</div>
-</section><section class="faq">
-<h2>FAQ</h2><details>
-<summary>Laptop apa yang cocok untuk kuliah?</summary>
-<p>Laptop dengan RAM minimal 8GB dan SSD sangat direkomendasikan.</p>
-</details><details>
-<summary>Laptop gaming terbaik untuk pemula?</summary>
-<p>Pilih laptop dengan GPU dedicated dan sistem pendingin yang baik.</p>
-</details><details>
-<summary>Apakah laptop murah tetap bagus?</summary>
-<p>Ya, selama spesifikasinya sesuai kebutuhan penggunaan Anda.</p>
-</details>
-</section><footer>
-<p>© 2026 Laptop Terlaris. All Rights Reserved.</p>
-</footer><script>
-const products = [
-{
-title:"Laptop Lenovo Intel Core i5 / i7 RAM 8GB / 16GB SSD 256GB / 500GB Windows 10 / 11",
-price:"Rp 1.250.000",
-image:"images/lenovo-i5-i7.webp",
-link:"https://s.shopee.co.id/70HQpFgLcu",
-rating:"⭐ 4.9",
-sold:"Terlaris"
-}
+</section>
+
+<!-- CATEGORY -->
+<section style="text-align:center">
+<div class="category">🔥 Gaming</div>
+<div class="category">📚 Kuliah</div>
+<div class="category">💼 Kerja</div>
+<div class="category">⚡ Murah</div>
+<div class="category">💎 Premium</div>
+</section>
+
+<!-- PRODUCT GRID -->
+<section id="produk">
+<div class="grid" id="grid"></div>
+</section>
+
+<script>
+
+/* RANDOM IMAGE (CTR + VISUAL ENGAGE) */
+const images=[
+"https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+"https://images.unsplash.com/photo-1518770660439-4636190af475",
+"https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
 ];
 
+function img(){
+return images[Math.floor(Math.random()*images.length)];
+}
 
+/* ===== FULL DATA PRODUK ===== */
+const products=[
 
-const grid = document.getElementById("productGrid");
+{"title":"Macbook Pro i5 RAM 16GB SSD 256GB","price":"Rp2.750.000","link":"https://s.shopee.co.id/7Aar2uZLgP"},
+{"title":"Thinkpad X280 i7 Gen 8","price":"Rp2.648.000","link":"https://s.shopee.co.id/2qRrt3TQQe"},
+{"title":"Thinkpad T480s i5 Gen 8","price":"Rp2.750.000","link":"https://s.shopee.co.id/AKXsotMLbu"},
+{"title":"Dell Latitude Core i5/i7","price":"Rp1.350.000","link":"https://s.shopee.co.id/50WMTIbKab"},
+{"title":"Thinkpad X270 i7","price":"Rp2.598.000","link":"https://s.shopee.co.id/6feaSRc6rL"},
+{"title":"HP Laptop Intel Core i5/i7","price":"Rp1.350.000","link":"https://s.shopee.co.id/809y4XUbUB"},
+{"title":"ASUS VivoBook N4020","price":"Rp3.932.310","link":"https://s.shopee.co.id/902VGbm5cg"},
+{"title":"Acer Travelmate i5 Gen 8","price":"Rp2.599.000","link":"https://s.shopee.co.id/40dpJTUJLH"},
+{"title":"Macbook Bekas 8GB SSD","price":"Rp1.804.050","link":"https://s.shopee.co.id/2Vp1Wqx7Rp"},
+{"title":"ASUS ROG GTX Gaming Laptop","price":"Rp5.550.000","link":"https://s.shopee.co.id/5ApmhWjCjp"},
+{"title":"Zyrex Ryzen 5 Laptop","price":"Rp7.299.000","link":"https://s.shopee.co.id/AKXsrArNyf"},
+{"title":"Laptop Intel N95 16GB","price":"Rp2.950.000","link":"https://s.shopee.co.id/3VhYi2I7kK"},
+{"title":"Dell Latitude 7420 i7 Gen 11","price":"Rp7.100.000","link":"https://s.shopee.co.id/9fIC3TElwv"},
+{"title":"Laptop Gaming Murah i7 GTX","price":"Rp5.550.000","link":"https://s.shopee.co.id/5ApmhWjCjp"},
+{"title":"Thinkpad Series Murah i5/i7","price":"Rp1.199.000","link":"https://s.shopee.co.id/7pqXsGdEIg"}
 
-products.forEach(product=>{
-  grid.innerHTML += `
-  <div class="card">
-    <img src="${product.image}" alt="${product.title}" loading="lazy">
-    <div class="card-body">
-      <div class="card-title">${product.title}</div>
-      <div class="price">${product.price}</div>
-      <div class="rating">${product.rating}</div>
-      <small>${product.sold}</small>
-      <a href="${product.link}" class="buy">Lihat Produk</a>
-    </div>
-  </div>
-  `;
+];
+
+const grid=document.getElementById("grid");
+
+products.forEach(p=>{
+grid.innerHTML+=`
+<div class="card">
+<img src="${img()}">
+<div class="card-body">
+
+<div class="title">${p.title}</div>
+<div class="price">${p.price}</div>
+
+<div class="meta">
+<span>⭐ 4.8</span>
+<span style="color:#ee4d2d;font-weight:bold">🔥 Best Deal</span>
+</div>
+
+<a class="buy" href="${p.link}" target="_blank">
+⚡ Ambil Harga Termurah
+</a>
+
+</div>
+</div>
+`;
 });
-</script></body>
-  </html>
+
+</script>
+
+</body>
+</html>
