@@ -1,118 +1,294 @@
-Build a modern SEO-optimized laptop marketplace landing page using HTML, CSS, and Vanilla JavaScript.
-
-Website Name:
-Laptop Terlaris
-
-Hero Title:
-Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik
-
-Hero Description:
-Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook pilihan dengan performa terbaik dan harga kompetitif.
-
-Requirements:
-
-- Pure HTML, CSS, JavaScript
-- Mobile-first responsive design
-- Fast loading
-- SEO optimized
-- Clean modern UI
-- White background
-- Shopee orange accent (#EE4D2D)
-- Professional typography
-- Product-focused layout
-
-Sections:
-
-1. Sticky Header
-
-- Logo
-- Search bar
-- Navigation menu
-
-2. Hero Section
-
-- Headline
-- Description
-- CTA button
-
-3. Categories Section
-
-- Gaming
-- Kuliah
-- Kerja
-- Ultrabook
-- Murah
-- Premium
-
-4. Product Grid (Main Focus)
-
-Create a responsive product grid using:
-
-grid-template-columns:
-repeat(auto-fill,minmax(250px,1fr));
-
-gap:20px;
-
-Generate product cards dynamically from:
-
-const products = [
-{
-title:"",
-price:"",
-image:"",
-link:"",
-rating:"",
-sold:""
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik</title><meta name="description" content="Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook terbaik dengan harga terbaik dan kualitas terpercaya."><style>
+:root{
+  --primary:#ee4d2d;
+  --dark:#111827;
+  --gray:#6b7280;
+  --light:#f9fafb;
+  --white:#ffffff;
 }
-]
 
-Each card:
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
 
-- Product image
-- Product title
-- Price
-- Rating
-- Sold count
-- Buy button
+body{
+  background:#f5f5f5;
+  color:var(--dark);
+}
 
-Generate 24 placeholder products.
+header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  padding:15px 5%;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  z-index:100;
+}
 
-5. Why Choose Us
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-6. FAQ Section
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:var(--primary);
+}
 
-7. Footer
+.search{
+  width:40%;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
 
-SEO:
+.hero{
+  text-align:center;
+  padding:80px 5%;
+  background:linear-gradient(135deg,#fff,#fff5f2);
+}
 
-- Semantic HTML
-- Meta title
-- Meta description
-- Open Graph
-- FAQ Schema
-- Product Schema
-- Proper H1-H3 structure
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
 
-Performance:
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:var(--gray);
+  line-height:1.7;
+}
 
-- Lazy loading images
-- CSS variables
-- Vanilla JavaScript only
-- Optimized rendering
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 28px;
+  background:var(--primary);
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+}
 
-File Structure:
+.categories{
+  padding:40px 5%;
+}
 
-- index.html
-- style.css
-- script.js
+.categories h2,
+.products h2{
+  margin-bottom:20px;
+}
 
-All images use local paths:
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
 
-images/product1.webp
+.category{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
 
-Do not use Bootstrap.
-Do not use jQuery.
-Do not use React.
-Do not use external image services.
+.products{
+  padding:40px 5%;
+}
 
-Create a clean, modern, premium landing page similar to Shopee Mall and Apple Store, with the product grid as the main visual focus.
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:15px;
+}
+
+.card-title{
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.price{
+  color:var(--primary);
+  font-size:20px;
+  font-weight:bold;
+}
+
+.rating{
+  color:#f59e0b;
+  margin:8px 0;
+}
+
+.buy{
+  display:block;
+  margin-top:10px;
+  text-align:center;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  padding:10px;
+  border-radius:10px;
+}
+
+.why{
+  padding:60px 5%;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.why-card{
+  background:#fff;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.faq{
+  padding:60px 5%;
+}
+
+.faq details{
+  background:#fff;
+  margin-bottom:10px;
+  padding:15px;
+  border-radius:10px;
+}
+
+footer{
+  background:#111827;
+  color:#fff;
+  text-align:center;
+  padding:30px;
+  margin-top:40px;
+}
+
+@media(max-width:768px){
+  .hero h1{
+    font-size:32px;
+  }
+
+  .search{
+    width:55%;
+  }
+}
+</style></head>
+<body><header>
+<nav>
+<div class="logo">Laptop Terlaris</div>
+<input class="search" type="text" placeholder="Cari laptop...">
+</nav>
+</header><section class="hero">
+<h1>Laptop Terlaris di Shopee — Kualitas Terbaik, Harga Terbaik</h1>
+<p>
+Temukan laptop gaming, laptop kerja, laptop kuliah, dan ultrabook pilihan dengan performa terbaik dan harga kompetitif.
+</p>
+<a href="#produk" class="btn">Lihat Produk</a>
+</section><section class="categories">
+<h2>Kategori Populer</h2>
+<div class="category-grid">
+<div class="category">Gaming</div>
+<div class="category">Kuliah</div>
+<div class="category">Kerja</div>
+<div class="category">Ultrabook</div>
+<div class="category">Murah</div>
+<div class="category">Premium</div>
+</div>
+</section><section class="products" id="produk">
+<h2>Produk Terlaris</h2><div class="product-grid" id="productGrid"></div>
+</section><section class="why">
+<h2>Mengapa Memilih Kami?</h2>
+<br>
+<div class="why-grid">
+<div class="why-card">
+<h3>Harga Terbaik</h3>
+<p>Pilihan laptop dengan harga kompetitif.</p>
+</div><div class="why-card">
+<h3>Produk Pilihan</h3>
+<p>Produk populer dan banyak dicari.</p>
+</div><div class="why-card">
+<h3>Kualitas Terpercaya</h3>
+<p>Laptop berkualitas untuk berbagai kebutuhan.</p>
+</div><div class="why-card">
+<h3>Pengiriman Cepat</h3>
+<p>Belanja lebih mudah dan nyaman.</p>
+</div>
+</div>
+</section><section class="faq">
+<h2>FAQ</h2><details>
+<summary>Laptop apa yang cocok untuk kuliah?</summary>
+<p>Laptop dengan RAM minimal 8GB dan SSD sangat direkomendasikan.</p>
+</details><details>
+<summary>Laptop gaming terbaik untuk pemula?</summary>
+<p>Pilih laptop dengan GPU dedicated dan sistem pendingin yang baik.</p>
+</details><details>
+<summary>Apakah laptop murah tetap bagus?</summary>
+<p>Ya, selama spesifikasinya sesuai kebutuhan penggunaan Anda.</p>
+</details>
+</section><footer>
+<p>© 2026 Laptop Terlaris. All Rights Reserved.</p>
+</footer><script>
+const products = [];
+
+for(let i=1;i<=24;i++){
+  products.push({
+    title:`Laptop Terlaris ${i}`,
+    price:`Rp ${(5+i)}.999.000`,
+    image:`images/product${i}.webp`,
+    rating:"⭐ 4.9",
+    sold:`${100*i}+ Terjual`,
+    link:"#"
+  });
+}
+
+const grid = document.getElementById("productGrid");
+
+products.forEach(product=>{
+  grid.innerHTML += `
+  <div class="card">
+    <img src="${product.image}" alt="${product.title}" loading="lazy">
+    <div class="card-body">
+      <div class="card-title">${product.title}</div>
+      <div class="price">${product.price}</div>
+      <div class="rating">${product.rating}</div>
+      <small>${product.sold}</small>
+      <a href="${product.link}" class="buy">Lihat Produk</a>
+    </div>
+  </div>
+  `;
+});
+</script></body>
+  </html>
